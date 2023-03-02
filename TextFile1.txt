@@ -8,13 +8,11 @@ client,
 clientProfile,
 order,
 
-
 enum--
 activity,
 issue,
 
-
-1 stand		1 client
+1 stand		1 client 
 1 client	n stand
 
 

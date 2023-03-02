@@ -43,8 +43,16 @@
   <ItemGroup>
     <Compile Include="Enums\Activity.cs" />
     <Compile Include="Enums\DataStatus.cs" />
+    <Compile Include="Enums\IssueNum.cs" />
     <Compile Include="Models\BaseEntity.cs" />
     <Compile Include="Models\Client.cs" />
+    <Compile Include="Models\ClientProfile.cs" />
+    <Compile Include="Models\Issue.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\Saloon.cs" />
+    <Compile Include="Models\SaloonClient.cs" />
+    <Compile Include="Models\Stand.cs" />
+    <Compile Include="Models\StandIssue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
