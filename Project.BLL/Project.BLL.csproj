@@ -51,6 +51,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DesignPattern\SingletonPattern\DBTool.cs" />
+    <Compile Include="GenericRepository\BaseRep\BaseRepository.cs" />
+    <Compile Include="GenericRepository\ConcRep\ClientProfileRepository.cs" />
+    <Compile Include="GenericRepository\ConcRep\ClientRepository.cs" />
+    <Compile Include="GenericRepository\ConcRep\IssueRepository.cs" />
+    <Compile Include="GenericRepository\ConcRep\OrderRepository.cs" />
+    <Compile Include="GenericRepository\ConcRep\SaloonClientRepository.cs" />
+    <Compile Include="GenericRepository\ConcRep\SaloonRepository.cs" />
+    <Compile Include="GenericRepository\ConcRep\StandIssueRepository.cs" />
+    <Compile Include="GenericRepository\ConcRep\StandRepository.cs" />
+    <Compile Include="GenericRepository\IntRep\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
