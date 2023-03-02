@@ -11,8 +11,5 @@ namespace Project.ENTITIES.Enums
         teknik =1,
         idari=2
 
-
-
-
     }
 }

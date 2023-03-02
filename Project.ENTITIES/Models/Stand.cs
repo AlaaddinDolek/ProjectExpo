@@ -15,8 +15,6 @@ namespace Project.ENTITIES.Models
         public int? SaloonID { get; set; }
         public Activity ActivityStatus { get; set; }
 
-
-
         //Relational Properties
 
         public virtual Client Client { get; set; }

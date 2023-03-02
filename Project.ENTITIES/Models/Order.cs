@@ -8,12 +8,11 @@ namespace Project.ENTITIES.Models
 {
     public class Order:BaseEntity
     {
-
+        public decimal UnitPrice { get; set; }
         public int ClientID  { get; set; }
         public int StandID { get; set; }
 
         //Relational Properties
-
         public virtual Client Client { get; set; }
         public virtual Stand Stand { get; set; }
     }
