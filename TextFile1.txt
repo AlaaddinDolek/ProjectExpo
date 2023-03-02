@@ -1,0 +1,42 @@
+class--
+stand,
+standIssue,*********
+Issue,
+saloon,
+saloonClient,********
+client,
+clientProfile,
+order,
+
+
+enum--
+activity,
+issue,
+
+
+1 stand		1 client
+1 client	n stand
+
+
+1 stand		n issue
+1 issue		n stand
+
+
+1 saloon	n stand
+1 stand		1 saloon
+
+
+1 saloon	n client
+1 client	n saloon
+
+
+1 order		1 client
+1 client	n order
+
+
+1 client	1 clientProfile
+1 clientProfile	1 client
+
+
+1 order		1 stand
+1 stand		1 order
