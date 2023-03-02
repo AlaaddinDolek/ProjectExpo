@@ -51,6 +51,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Options\BaseMap.cs" />
+    <Compile Include="Options\ClientMap.cs" />
+    <Compile Include="Options\ClientProfileMap.cs" />
+    <Compile Include="Options\IssueMap.cs" />
+    <Compile Include="Options\OrderMap.cs" />
+    <Compile Include="Options\SaloonClientMap.cs" />
+    <Compile Include="Options\SaloonMap.cs" />
+    <Compile Include="Options\StandIssueMap.cs" />
+    <Compile Include="Options\StandMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
