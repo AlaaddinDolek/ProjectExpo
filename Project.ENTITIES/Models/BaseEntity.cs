@@ -6,7 +6,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Project.ENTITIES.Models
-{
+{   /*
+                Her class'ta olması gereken özellikleri miras vereceğimiz için abstract olarak oluşturduk.
+     
+     */
     public abstract class BaseEntity
     {
         public int ID { get; set; }

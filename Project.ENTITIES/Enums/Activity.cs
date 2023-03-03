@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project.ENTITIES.Enums
 {
+    // Stand yoğunluğunu belirleyebileceğimiz property için oluşturduğumuz enum.
     public enum Activity
     {
         High = 1,

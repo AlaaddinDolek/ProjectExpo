@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Project.ENTITIES.Models
 {
+    /*
+            Fuardaki standları temsil eden class.
+     */
     public class Stand:BaseEntity
     {
         public string StandNo { get; set; }

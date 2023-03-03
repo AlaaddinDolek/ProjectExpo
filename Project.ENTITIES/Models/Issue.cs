@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace Project.ENTITIES.Models
 {
+    /*
+            Stand kurulumu esnasında meydana gelebilecek sorunları temsilen oluşturduğumuz class
+     
+     */
     public class Issue:BaseEntity
     {
         public string Description { get; set; }

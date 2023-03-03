@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Project.ENTITIES.Enums
 {
+    // Standlarda hata tiplerini belirlediğimiz enum.
     public enum IssueNum
     {
-        teknik =1,
-        idari=2
+        Technic =1,
+        Administrative = 2
 
     }
 }
