@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Project.ENTITIES.Models
 {
+    /*
+            Müşteri bilgilerinin girildiği class.
+     */
     public class ClientProfile:BaseEntity
     {
         public string CompanyAddress { get; set; }

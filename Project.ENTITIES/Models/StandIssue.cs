@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Project.ENTITIES.Models
 {
+    /*
+        Stand hatalarını gösteren junction tablo.
+     */
     public class StandIssue:BaseEntity
     {
         public int StandID { get; set; }

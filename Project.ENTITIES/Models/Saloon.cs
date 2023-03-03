@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Project.ENTITIES.Models
 {
+    /*
+            Fuar alanındaki salonları temsil eden class.
+     */
     public class Saloon:BaseEntity
     {
         public string SaloonName { get; set; }

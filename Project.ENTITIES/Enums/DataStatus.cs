@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project.ENTITIES.Enums
 {
+    // Database için veri status'ını belirttiğimiz enum.
     public enum DataStatus
     {
         Inserted = 1,

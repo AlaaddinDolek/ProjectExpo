@@ -8,6 +8,9 @@ namespace Project.ENTITIES.Models
 {
     public class Client:BaseEntity
     {
+        /*
+                Müşteriyi temsilen oluşturulan class.
+         */
         public string CompanyName { get; set; }
 
 

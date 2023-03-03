@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Project.ENTITIES.Models
 {
+    /*
+            Salon müşterilerini temsil eden junction tablo.
+     */
     public class SaloonClient:BaseEntity
     {
         public int ClientID { get; set; }

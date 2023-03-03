@@ -8,6 +8,9 @@ namespace Project.ENTITIES.Models
 {
     public class Order:BaseEntity
     {
+        /*
+            Fuar organizasyon firmasının aldığı siparişleri temsil eden class.
+         */
         public decimal UnitPrice { get; set; }
         public int ClientID  { get; set; }
         public int StandID { get; set; }
