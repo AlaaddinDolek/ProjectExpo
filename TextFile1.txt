@@ -38,3 +38,19 @@ issue,
 
 1 order		1 stand
 1 stand		1 order
+-------------------------------------------------------------------------------
+1 Employee				1EmployeeProfile 
+1 EmployeeProfile		1Employee
+
+1Employee		n Order
+1 Order			1 Employee
+
+Form1'de sadece kullanýcý adý þifre isteyeceðiz. Giriþ yapýlýrsa form2 açýlacak.
+
+Ekstra ürünlerin seçilmesi için ekstra ürün class'ý oluþturulacak. Bu class ekstra ürünlere miras verecek.
+Ekstra ürünler için classlar oluþturulacak...(mutfak, bar gibi)
+
+Sipariþe teslim tarihi prop'u eklenecek. Issue eklendiðinde projenin teslim tarihine etki edecekse bu teslim tarihini güncelleyecek.
+
+
+

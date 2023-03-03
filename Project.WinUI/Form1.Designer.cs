@@ -69,14 +69,14 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(288, 90);
+            this.comboBox1.Location = new System.Drawing.Point(288, 58);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(122, 24);
             this.comboBox1.TabIndex = 1;
             // 
             // lblSaloon
             // 
-            this.lblSaloon.Location = new System.Drawing.Point(288, 58);
+            this.lblSaloon.Location = new System.Drawing.Point(288, 26);
             this.lblSaloon.Name = "lblSaloon";
             this.lblSaloon.Size = new System.Drawing.Size(122, 23);
             this.lblSaloon.TabIndex = 2;
@@ -87,14 +87,14 @@
             // 
             this.comboBox2.Enabled = false;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(593, 90);
+            this.comboBox2.Location = new System.Drawing.Point(593, 58);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(122, 24);
             this.comboBox2.TabIndex = 1;
             // 
             // lblActivity
             // 
-            this.lblActivity.Location = new System.Drawing.Point(593, 58);
+            this.lblActivity.Location = new System.Drawing.Point(593, 26);
             this.lblActivity.Name = "lblActivity";
             this.lblActivity.Size = new System.Drawing.Size(122, 29);
             this.lblActivity.TabIndex = 2;
@@ -105,23 +105,23 @@
             // 
             this.lstAvailableStands.FormattingEnabled = true;
             this.lstAvailableStands.ItemHeight = 16;
-            this.lstAvailableStands.Location = new System.Drawing.Point(288, 141);
+            this.lstAvailableStands.Location = new System.Drawing.Point(288, 108);
             this.lstAvailableStands.Name = "lstAvailableStands";
-            this.lstAvailableStands.Size = new System.Drawing.Size(427, 420);
+            this.lstAvailableStands.Size = new System.Drawing.Size(427, 164);
             this.lstAvailableStands.TabIndex = 3;
             // 
             // lstIssue
             // 
             this.lstIssue.FormattingEnabled = true;
             this.lstIssue.ItemHeight = 16;
-            this.lstIssue.Location = new System.Drawing.Point(802, 141);
+            this.lstIssue.Location = new System.Drawing.Point(1283, 141);
             this.lstIssue.Name = "lstIssue";
-            this.lstIssue.Size = new System.Drawing.Size(366, 420);
+            this.lstIssue.Size = new System.Drawing.Size(366, 404);
             this.lstIssue.TabIndex = 3;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(941, 92);
+            this.textBox1.Location = new System.Drawing.Point(1422, 92);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(227, 22);
             this.textBox1.TabIndex = 4;
@@ -130,14 +130,14 @@
             // 
             this.comboBox4.Enabled = false;
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(802, 90);
+            this.comboBox4.Location = new System.Drawing.Point(1283, 90);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(122, 24);
             this.comboBox4.TabIndex = 1;
             // 
             // lblIssue
             // 
-            this.lblIssue.Location = new System.Drawing.Point(799, 58);
+            this.lblIssue.Location = new System.Drawing.Point(1280, 58);
             this.lblIssue.Name = "lblIssue";
             this.lblIssue.Size = new System.Drawing.Size(122, 29);
             this.lblIssue.TabIndex = 2;
@@ -147,7 +147,7 @@
             // btnIssue
             // 
             this.btnIssue.Enabled = false;
-            this.btnIssue.Location = new System.Drawing.Point(1002, 584);
+            this.btnIssue.Location = new System.Drawing.Point(1483, 584);
             this.btnIssue.Name = "btnIssue";
             this.btnIssue.Size = new System.Drawing.Size(166, 28);
             this.btnIssue.TabIndex = 0;
@@ -156,7 +156,7 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(938, 58);
+            this.label1.Location = new System.Drawing.Point(1419, 58);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(230, 29);
             this.label1.TabIndex = 2;
@@ -192,7 +192,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1210, 735);
+            this.ClientSize = new System.Drawing.Size(1741, 772);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lstIssue);
@@ -211,6 +211,7 @@
             this.Controls.Add(this.btnAccept);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
