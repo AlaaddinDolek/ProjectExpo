@@ -27,7 +27,8 @@ namespace Project.WinUI
         StandRepository _standRep;
 
         ExtraRepository _extraRep;
-        
+
+        IssueRepository _issueRep;
         public Form2()
         {
             _clientRep= new ClientRepository();
@@ -35,6 +36,7 @@ namespace Project.WinUI
             _saloonRep= new SaloonRepository();
             _standRep= new StandRepository();
             _extraRep=new ExtraRepository();
+            _issueRep = new IssueRepository();
 
             InitializeComponent();         
 
@@ -89,6 +91,20 @@ namespace Project.WinUI
             foreach (Stand item in stands)
             {
                 _standRep.Add(item);
+            }
+
+            List<Issue> issues = new List<Issue>
+            {
+                new Issue  {Description ="Technical"},
+                new Issue {Description = "Management"},
+                new Issue {Description = "Other"}
+            };
+
+            cmbIssueType.DataSource= issues;
+
+            foreach (Issue item in issues)
+            {
+                _issueRep.Add(item);
             }
 
         }
