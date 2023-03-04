@@ -1,4 +1,5 @@
 ﻿using Project.BLL.GenericRepository.ConcRep;
+using Project.ENTITIES.Models;
 using Project.ENTITIES.Tools;
 using System;
 using System.Collections.Generic;
@@ -23,26 +24,16 @@ namespace Project.WinUI
         }
 
 
-        string name;
-        string psw;
+
 
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
+           Employee emp = new Employee();
+            emp.UserName = txtUserName.Text;
+            emp.Password = txtPassword.Text;  
 
-            name = txtUserName.Text;
-            psw = txtPassword.Text;
 
-            if (name == "admin" && psw == "123")
-            {
-                MessageBox.Show("Welcome.");
-                Form2 frm2 = new Form2();
-                frm2.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("Wrong username or password.");
-                return;
-            }
+
 
         }
 
