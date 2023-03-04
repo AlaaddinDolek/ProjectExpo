@@ -15,10 +15,10 @@ using System.Windows.Forms;
 
 namespace Project.WinUI
 {
-    public partial class Form2 : Form
-    {
+	public partial class Form2 : Form
+	{
 
-        ClientRepository _clientRep;
+		ClientRepository _clientRep;
 
         ClientProfileRepository _clientProfileRep;
 
@@ -40,7 +40,7 @@ namespace Project.WinUI
 
             InitializeComponent();         
 
-        }
+		}
 
         private void Form2_Load(object sender, EventArgs e)
         {
