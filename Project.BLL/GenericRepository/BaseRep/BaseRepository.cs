@@ -138,7 +138,8 @@ namespace Project.BLL.GenericRepository.BaseRep
         {
             return _db.Set<T>().Where(exp).ToList();
         }
-    }
+       
+	}
 }
 
 

@@ -51,6 +51,14 @@ namespace Project.BLL.GenericRepository.IntRep
 
         List<T> GetCountedDatas(int number);
 
+        //GetDate Config Datas
+
+       
+
+
+
+
+
 
     }
 }

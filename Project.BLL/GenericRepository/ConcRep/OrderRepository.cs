@@ -1,4 +1,6 @@
-﻿using Project.BLL.GenericRepository.BaseRep;
+﻿using Project.BLL.DesignPattern.SingletonPattern;
+using Project.BLL.GenericRepository.BaseRep;
+using Project.DAL.ContextClasses;
 using Project.ENTITIES.Models;
 using System;
 using System.Collections.Generic;
@@ -10,5 +12,16 @@ namespace Project.BLL.GenericRepository.ConcRep
 {
     public class OrderRepository:BaseRepository<Order>
     {
+        MyContext _orderDb;
+        public OrderRepository()
+        {
+            _orderDb = DBTool.DbInstance;
+        }
+
+        public void UpdateDate()
+        {
+
+        }
+
     }
 }
