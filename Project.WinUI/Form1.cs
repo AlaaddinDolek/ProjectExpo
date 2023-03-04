@@ -21,6 +21,30 @@ namespace Project.WinUI
 
         }
 
+
+        string name;
+        string psw;
+
+        private void btnLogin_Click_1(object sender, EventArgs e)
+        {
+
+            name = txtUserName.Text;
+            psw = txtPassword.Text;
+
+            if (name == "admin" && psw == "123")
+            {
+                MessageBox.Show("Welcome.");
+                Form2 frm2 = new Form2();
+                frm2.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Wrong username or password.");
+                return;
+            }
+
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
