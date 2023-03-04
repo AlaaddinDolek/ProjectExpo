@@ -54,6 +54,7 @@
     <Compile Include="Options\BaseMap.cs" />
     <Compile Include="Options\ClientMap.cs" />
     <Compile Include="Options\ClientProfileMap.cs" />
+    <Compile Include="Options\EmployeeMap.cs" />
     <Compile Include="Options\IssueMap.cs" />
     <Compile Include="Options\OrderMap.cs" />
     <Compile Include="Options\SaloonClientMap.cs" />

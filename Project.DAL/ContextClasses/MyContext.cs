@@ -27,6 +27,7 @@ namespace Project.DAL.ContextClasses
             modelBuilder.Configurations.Add(new SaloonClientMap());
             modelBuilder.Configurations.Add(new StandIssueMap());
             modelBuilder.Configurations.Add(new StandMap());
+            modelBuilder.Configurations.Add(new EmployeeMap());
         }
 
         public DbSet<Client> Clients  { get; set; }
@@ -37,5 +38,6 @@ namespace Project.DAL.ContextClasses
         public DbSet<SaloonClient> SaloonClients  { get; set; }
         public DbSet<Stand> Stands  { get; set; }
         public DbSet<StandIssue> StandIssues  { get; set; }
+        public DbSet<Employee> Employees { get; set; }
     }
 }
