@@ -82,6 +82,7 @@
             this.btnContinue.TabIndex = 38;
             this.btnContinue.Text = "Continue";
             this.btnContinue.UseVisualStyleBackColor = true;
+            this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
             // 
             // txtPhoneNumber
             // 

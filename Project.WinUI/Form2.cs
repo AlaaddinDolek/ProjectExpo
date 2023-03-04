@@ -25,6 +25,8 @@ namespace Project.WinUI
         SaloonRepository _saloonRep;
 
         StandRepository _standRep;
+
+        ExtraRepository _extraRep;
         
         public Form2()
         {
@@ -32,6 +34,7 @@ namespace Project.WinUI
             _clientProfileRep= new ClientProfileRepository();
             _saloonRep= new SaloonRepository();
             _standRep= new StandRepository();
+            _extraRep=new ExtraRepository();
 
             InitializeComponent();         
 
@@ -43,11 +46,16 @@ namespace Project.WinUI
             {
                 new Extra{Name ="Touilet",Price =10 },
                 new Extra{Name = "Cafe", Price=10},
-                new Extra{Name = "Meeting Room",Price=10}         
+                new Extra{Name = "Meeting Room",Price=10}
             };
 
                 cmbExtra.DataSource= extras;
-            
+
+            foreach (Extra item in extras)
+            {
+                _extraRep.Add(item);
+            }
+
 
             List<Saloon> saloons = new List<Saloon>
             {
@@ -58,6 +66,11 @@ namespace Project.WinUI
             };
 
             cmbSaloon.DataSource = saloons;
+
+            foreach (Saloon item in saloons)
+            {
+                _saloonRep.Add(item);
+            }
             
 
             List<Stand> stands = new List<Stand>
@@ -72,36 +85,32 @@ namespace Project.WinUI
                 new Stand{StandNo="8", StandArea="75 m2", ActivityStatus = ENTITIES.Enums.Activity.Low},
                 new Stand{StandNo="9", StandArea="100 m2", ActivityStatus = ENTITIES.Enums.Activity.Low},
             };
-            
-        }
 
-		private void btnContinue_Click(object sender, EventArgs e)
+            foreach (Stand item in stands)
+            {
+                _standRep.Add(item);
+            }
+
+        }
+        // Stand belirlendikten sonra sipariş aşamasına geçiş
+        private void btnContinue_Click(object sender, EventArgs e)
         {
             try
             {
                 Client cl = new Client();
-
                 cl.CompanyName = txtCompanyName.Text;
 
-               
-
                 ClientProfile clProfile = new ClientProfile();
-
                 clProfile.TaxNumber = txtTaxNumber.Text;
                 clProfile.PhoneNumber = txtPhoneNumber.Text;
 
                 _clientProfileRep.Add(clProfile);
                 _clientRep.Add(cl);
-
-                
-                
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-
-		}
-	}
+        }
+    }
 }
