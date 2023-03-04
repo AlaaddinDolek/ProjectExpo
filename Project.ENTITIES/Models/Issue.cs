@@ -16,8 +16,14 @@ namespace Project.ENTITIES.Models
         public string Description { get; set; }
         public IssueNum? Status { get; set; }
 
-        //Relational Properties
 
-        public virtual List<StandIssue> StandIssues { get; set; }
+		public override string ToString()
+		{
+            return Description;
+		}
+
+		//Relational Properties
+
+		public virtual List<StandIssue> StandIssues { get; set; }
     }
 }
