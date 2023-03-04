@@ -32,12 +32,11 @@
             this.btnContinue = new System.Windows.Forms.Button();
             this.txtPhoneNumber = new System.Windows.Forms.TextBox();
             this.txtTaxNumber = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCompanyName = new System.Windows.Forms.TextBox();
             this.txtDetails = new System.Windows.Forms.TextBox();
             this.lstIssues = new System.Windows.Forms.ListBox();
             this.lstAvailableStands = new System.Windows.Forms.ListBox();
-            this.lblCheck = new System.Windows.Forms.Label();
+            this.lblDescription = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -68,7 +67,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(388, 105);
+            this.dateTimePicker1.Location = new System.Drawing.Point(379, 151);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
@@ -76,10 +75,10 @@
             // 
             // btnContinue
             // 
-            this.btnContinue.Location = new System.Drawing.Point(159, 273);
+            this.btnContinue.Location = new System.Drawing.Point(455, 664);
             this.btnContinue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnContinue.Name = "btnContinue";
-            this.btnContinue.Size = new System.Drawing.Size(101, 30);
+            this.btnContinue.Size = new System.Drawing.Size(93, 30);
             this.btnContinue.TabIndex = 38;
             this.btnContinue.Text = "Continue";
             this.btnContinue.UseVisualStyleBackColor = true;
@@ -100,21 +99,13 @@
             this.txtTaxNumber.Size = new System.Drawing.Size(227, 22);
             this.txtTaxNumber.TabIndex = 36;
             // 
-            // textBox4
+            // txtCompanyName
             // 
-            this.textBox4.Location = new System.Drawing.Point(399, 151);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(161, 22);
-            this.textBox4.TabIndex = 35;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(97, 121);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(227, 22);
-            this.textBox2.TabIndex = 34;
+            this.txtCompanyName.Location = new System.Drawing.Point(97, 121);
+            this.txtCompanyName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCompanyName.Name = "txtCompanyName";
+            this.txtCompanyName.Size = new System.Drawing.Size(227, 22);
+            this.txtCompanyName.TabIndex = 34;
             // 
             // txtDetails
             // 
@@ -144,14 +135,14 @@
             this.lstAvailableStands.Size = new System.Drawing.Size(567, 228);
             this.lstAvailableStands.TabIndex = 31;
             // 
-            // lblCheck
+            // lblDescription
             // 
-            this.lblCheck.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblCheck.Location = new System.Drawing.Point(95, 592);
-            this.lblCheck.Name = "lblCheck";
-            this.lblCheck.Size = new System.Drawing.Size(571, 68);
-            this.lblCheck.TabIndex = 29;
-            this.lblCheck.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDescription.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblDescription.Location = new System.Drawing.Point(95, 592);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(571, 68);
+            this.lblDescription.TabIndex = 29;
+            this.lblDescription.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label4
             // 
@@ -173,7 +164,7 @@
             // 
             // label15
             // 
-            this.label15.Location = new System.Drawing.Point(396, 121);
+            this.label15.Location = new System.Drawing.Point(384, 121);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(164, 30);
             this.label15.TabIndex = 26;
@@ -347,7 +338,7 @@
             // 
             // btnAccept
             // 
-            this.btnAccept.Location = new System.Drawing.Point(463, 662);
+            this.btnAccept.Location = new System.Drawing.Point(162, 279);
             this.btnAccept.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAccept.Name = "btnAccept";
             this.btnAccept.Size = new System.Drawing.Size(85, 32);
@@ -359,7 +350,7 @@
             // 
             this.rdbHigh.AutoSize = true;
             this.rdbHigh.Location = new System.Drawing.Point(665, 182);
-            this.rdbHigh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbHigh.Margin = new System.Windows.Forms.Padding(4);
             this.rdbHigh.Name = "rdbHigh";
             this.rdbHigh.Size = new System.Drawing.Size(56, 20);
             this.rdbHigh.TabIndex = 40;
@@ -371,7 +362,7 @@
             // 
             this.rdbLow.AutoSize = true;
             this.rdbLow.Location = new System.Drawing.Point(665, 241);
-            this.rdbLow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbLow.Margin = new System.Windows.Forms.Padding(4);
             this.rdbLow.Name = "rdbLow";
             this.rdbLow.Size = new System.Drawing.Size(52, 20);
             this.rdbLow.TabIndex = 40;
@@ -383,7 +374,7 @@
             // 
             this.rdbMedium.AutoSize = true;
             this.rdbMedium.Location = new System.Drawing.Point(665, 213);
-            this.rdbMedium.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbMedium.Margin = new System.Windows.Forms.Padding(4);
             this.rdbMedium.Name = "rdbMedium";
             this.rdbMedium.Size = new System.Drawing.Size(76, 20);
             this.rdbMedium.TabIndex = 40;
@@ -413,12 +404,11 @@
             this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.txtPhoneNumber);
             this.Controls.Add(this.txtTaxNumber);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtCompanyName);
             this.Controls.Add(this.txtDetails);
             this.Controls.Add(this.lstIssues);
             this.Controls.Add(this.lstAvailableStands);
-            this.Controls.Add(this.lblCheck);
+            this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label15);
@@ -442,7 +432,7 @@
             this.Controls.Add(this.btnAddIssue);
             this.Controls.Add(this.btnDecline);
             this.Controls.Add(this.btnAccept);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -457,12 +447,11 @@
         private System.Windows.Forms.Button btnContinue;
         private System.Windows.Forms.TextBox txtPhoneNumber;
         private System.Windows.Forms.TextBox txtTaxNumber;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCompanyName;
         private System.Windows.Forms.TextBox txtDetails;
         private System.Windows.Forms.ListBox lstIssues;
         private System.Windows.Forms.ListBox lstAvailableStands;
-        private System.Windows.Forms.Label lblCheck;
+        private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label15;
