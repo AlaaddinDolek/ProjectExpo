@@ -25,6 +25,11 @@ namespace Project.ENTITIES.Models
         public virtual Saloon Saloon { get; set; }
         public virtual Order Order { get; set; }
 
+        public override string ToString()
+        {
+            return $"No:{StandNo} ,{StandArea}";
+        }
+
 
     }
 }

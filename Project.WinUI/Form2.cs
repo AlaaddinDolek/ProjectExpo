@@ -21,9 +21,18 @@ namespace Project.WinUI
         ClientRepository _clientRep;
 
         ClientProfileRepository _clientProfileRep;
+
+        SaloonRepository _saloonRep;
+
+        StandRepository _standRep;
         
         public Form2()
         {
+            _clientRep= new ClientRepository();
+            _clientProfileRep= new ClientProfileRepository();
+            _saloonRep= new SaloonRepository();
+            _standRep= new StandRepository();
+
             InitializeComponent();         
 
         }
@@ -37,10 +46,32 @@ namespace Project.WinUI
                 new Extra{Name = "Meeting Room",Price=10}         
             };
 
-            foreach (Extra item in extras)
+                cmbExtra.DataSource= extras;
+            
+
+            List<Saloon> saloons = new List<Saloon>
             {
-                cmbExtra.Items.Add(item);
-            }
+                new Saloon{SaloonName = "North"},
+                new Saloon{SaloonName = "South"},
+                new Saloon{SaloonName = "East"},
+                new Saloon{SaloonName = "West"}
+            };
+
+            cmbSaloon.DataSource = saloons;
+            
+
+            List<Stand> stands = new List<Stand>
+            {
+                new Stand{StandNo="1", StandArea="50 m2", ActivityStatus = ENTITIES.Enums.Activity.High},
+                new Stand{StandNo="2", StandArea="75 m2", ActivityStatus = ENTITIES.Enums.Activity.High},
+                new Stand{StandNo="3", StandArea="100 m2", ActivityStatus = ENTITIES.Enums.Activity.High},
+                new Stand{StandNo="4", StandArea="50 m2", ActivityStatus = ENTITIES.Enums.Activity.Medium},
+                new Stand{StandNo="5", StandArea="75 m2", ActivityStatus = ENTITIES.Enums.Activity.Medium},
+                new Stand{StandNo="6", StandArea="100 m2", ActivityStatus = ENTITIES.Enums.Activity.Medium},
+                new Stand{StandNo="7", StandArea="50 m2", ActivityStatus = ENTITIES.Enums.Activity.Low},
+                new Stand{StandNo="8", StandArea="75 m2", ActivityStatus = ENTITIES.Enums.Activity.Low},
+                new Stand{StandNo="9", StandArea="100 m2", ActivityStatus = ENTITIES.Enums.Activity.Low},
+            };
             
         }
 

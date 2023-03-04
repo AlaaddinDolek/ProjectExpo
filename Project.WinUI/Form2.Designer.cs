@@ -67,10 +67,10 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(379, 151);
+            this.dateTimePicker1.Location = new System.Drawing.Point(399, 133);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(227, 22);
             this.dateTimePicker1.TabIndex = 39;
             // 
             // btnContinue
@@ -164,9 +164,9 @@
             // 
             // label15
             // 
-            this.label15.Location = new System.Drawing.Point(384, 121);
+            this.label15.Location = new System.Drawing.Point(399, 101);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(164, 30);
+            this.label15.Size = new System.Drawing.Size(227, 30);
             this.label15.TabIndex = 26;
             this.label15.Text = "Expo Date";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -256,7 +256,7 @@
             // 
             // lblActivity
             // 
-            this.lblActivity.Location = new System.Drawing.Point(648, 133);
+            this.lblActivity.Location = new System.Drawing.Point(648, 99);
             this.lblActivity.Name = "lblActivity";
             this.lblActivity.Size = new System.Drawing.Size(123, 30);
             this.lblActivity.TabIndex = 18;
@@ -292,18 +292,18 @@
             // 
             // label10
             // 
-            this.label10.Location = new System.Drawing.Point(399, 279);
+            this.label10.Location = new System.Drawing.Point(399, 245);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(123, 23);
+            this.label10.Size = new System.Drawing.Size(227, 23);
             this.label10.TabIndex = 17;
             this.label10.Text = "Select Extra";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblSaloon
             // 
-            this.lblSaloon.Location = new System.Drawing.Point(399, 215);
+            this.lblSaloon.Location = new System.Drawing.Point(399, 182);
             this.lblSaloon.Name = "lblSaloon";
-            this.lblSaloon.Size = new System.Drawing.Size(123, 23);
+            this.lblSaloon.Size = new System.Drawing.Size(227, 23);
             this.lblSaloon.TabIndex = 16;
             this.lblSaloon.Text = "Select Saloon";
             this.lblSaloon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -311,19 +311,19 @@
             // cmbExtra
             // 
             this.cmbExtra.FormattingEnabled = true;
-            this.cmbExtra.Location = new System.Drawing.Point(399, 305);
+            this.cmbExtra.Location = new System.Drawing.Point(399, 271);
             this.cmbExtra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbExtra.Name = "cmbExtra";
-            this.cmbExtra.Size = new System.Drawing.Size(121, 24);
+            this.cmbExtra.Size = new System.Drawing.Size(227, 24);
             this.cmbExtra.TabIndex = 11;
             // 
             // cmbSaloon
             // 
             this.cmbSaloon.FormattingEnabled = true;
-            this.cmbSaloon.Location = new System.Drawing.Point(399, 241);
+            this.cmbSaloon.Location = new System.Drawing.Point(399, 207);
             this.cmbSaloon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbSaloon.Name = "cmbSaloon";
-            this.cmbSaloon.Size = new System.Drawing.Size(121, 24);
+            this.cmbSaloon.Size = new System.Drawing.Size(227, 24);
             this.cmbSaloon.TabIndex = 9;
             // 
             // btnDecline
@@ -349,7 +349,7 @@
             // rdbHigh
             // 
             this.rdbHigh.AutoSize = true;
-            this.rdbHigh.Location = new System.Drawing.Point(665, 182);
+            this.rdbHigh.Location = new System.Drawing.Point(665, 148);
             this.rdbHigh.Margin = new System.Windows.Forms.Padding(4);
             this.rdbHigh.Name = "rdbHigh";
             this.rdbHigh.Size = new System.Drawing.Size(56, 20);
@@ -361,7 +361,7 @@
             // rdbLow
             // 
             this.rdbLow.AutoSize = true;
-            this.rdbLow.Location = new System.Drawing.Point(665, 241);
+            this.rdbLow.Location = new System.Drawing.Point(665, 207);
             this.rdbLow.Margin = new System.Windows.Forms.Padding(4);
             this.rdbLow.Name = "rdbLow";
             this.rdbLow.Size = new System.Drawing.Size(52, 20);
@@ -373,7 +373,7 @@
             // rdbMedium
             // 
             this.rdbMedium.AutoSize = true;
-            this.rdbMedium.Location = new System.Drawing.Point(665, 213);
+            this.rdbMedium.Location = new System.Drawing.Point(665, 179);
             this.rdbMedium.Margin = new System.Windows.Forms.Padding(4);
             this.rdbMedium.Name = "rdbMedium";
             this.rdbMedium.Size = new System.Drawing.Size(76, 20);

@@ -17,5 +17,10 @@ namespace Project.ENTITIES.Models
 
         public virtual List<Stand> Stands { get; set; }
         public virtual List<SaloonClient> SaloonClients { get; set; }
+
+        public override string ToString()
+        {
+            return $"{SaloonName}";
+        }
     }
 }
