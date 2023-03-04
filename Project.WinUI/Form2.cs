@@ -1,4 +1,7 @@
-﻿using Project.BLL.GenericRepository.ConcRep;
+﻿using Project.BLL.DesignPattern.SingletonPattern;
+using Project.BLL.GenericRepository.BaseRep;
+using Project.BLL.GenericRepository.ConcRep;
+using Project.ENTITIES.Models;
 using Project.ENTITIES.Tools;
 using System;
 using System.Collections.Generic;
@@ -15,9 +18,13 @@ namespace Project.WinUI
     public partial class Form2 : Form
     {
 
+        ClientRepository _clientRep;
+
+        ClientProfileRepository _clientProfileRep;
+        
         public Form2()
         {
-            InitializeComponent();
+            InitializeComponent();         
 
         }
 
@@ -36,5 +43,34 @@ namespace Project.WinUI
             }
             
         }
-    }
+
+		private void btnContinue_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Client cl = new Client();
+
+                cl.CompanyName = txtCompanyName.Text;
+
+               
+
+                ClientProfile clProfile = new ClientProfile();
+
+                clProfile.TaxNumber = txtTaxNumber.Text;
+                clProfile.PhoneNumber = txtPhoneNumber.Text;
+
+                _clientProfileRep.Add(clProfile);
+                _clientRep.Add(cl);
+
+                
+                
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+		}
+	}
 }
