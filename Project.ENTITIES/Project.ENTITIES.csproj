@@ -48,6 +48,7 @@
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\ClientProfile.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\ExtraOrder.cs" />
     <Compile Include="Models\Issue.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Saloon.cs" />
@@ -55,10 +56,7 @@
     <Compile Include="Models\Stand.cs" />
     <Compile Include="Models\StandIssue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tools\BaseExtra.cs" />
-    <Compile Include="Tools\Cafe.cs" />
-    <Compile Include="Tools\ConferenceRoom.cs" />
-    <Compile Include="Tools\Toilet.cs" />
+    <Compile Include="Models\Extra.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

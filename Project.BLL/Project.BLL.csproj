@@ -56,6 +56,8 @@
     <Compile Include="GenericRepository\ConcRep\ClientProfileRepository.cs" />
     <Compile Include="GenericRepository\ConcRep\ClientRepository.cs" />
     <Compile Include="GenericRepository\ConcRep\EmployeeRepository.cs" />
+    <Compile Include="GenericRepository\ConcRep\ExtraOrderRepository.cs" />
+    <Compile Include="GenericRepository\ConcRep\ExtraRepository.cs" />
     <Compile Include="GenericRepository\ConcRep\IssueRepository.cs" />
     <Compile Include="GenericRepository\ConcRep\OrderRepository.cs" />
     <Compile Include="GenericRepository\ConcRep\SaloonClientRepository.cs" />

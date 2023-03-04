@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project.ENTITIES.Tools
 {
-	public abstract class BaseExtra : BaseEntity
+	public  class Extra : BaseEntity
 	{
 		public string Name { get; set; }
 
@@ -17,6 +17,11 @@ namespace Project.ENTITIES.Tools
 		{
 			return $"{Name} {Price:C2}";
 		}
+
+		//Relationlap properties
+
+
+		public virtual List<ExtraOrder> ExtraOrders { get; set; }
 
 	}
 }

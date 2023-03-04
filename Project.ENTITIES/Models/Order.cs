@@ -27,5 +27,6 @@ namespace Project.ENTITIES.Models
         public virtual Stand Stand { get; set; }
 
         public virtual  Employee Employee { get; set; }
+        public virtual List<ExtraOrder> ExtraOrders { get; set; }
     }
 }

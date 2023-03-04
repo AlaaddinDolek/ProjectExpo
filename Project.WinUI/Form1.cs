@@ -15,10 +15,13 @@ namespace Project.WinUI
 {
     public partial class Form1 : Form
     {
+
+        EmployeeRepository _empRep;
         ClientProfileRepository _clientProfileRep;
         public Form1()
         {
             _clientProfileRep= new ClientProfileRepository();
+            _empRep = new EmployeeRepository();
             InitializeComponent();
 
         }
@@ -28,9 +31,22 @@ namespace Project.WinUI
 
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
-           Employee emp = new Employee();
+            Employee emp = new Employee();
             emp.UserName = txtUserName.Text;
-            emp.Password = txtPassword.Text;  
+            emp.Password = txtPassword.Text;
+
+            if (emp.UserName == "admin" && emp.Password =="123")
+            {
+                MessageBox.Show("Welcome!!");
+                Form2 frm2 = new Form2();
+                frm2.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Wrong username or password..","Try again!");
+                return;
+            }
+
 
 
 

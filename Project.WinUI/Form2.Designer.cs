@@ -56,11 +56,13 @@
             this.cmbIssue = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.lblSaloon = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.cmbActivity = new System.Windows.Forms.ComboBox();
+            this.cmbExtra = new System.Windows.Forms.ComboBox();
             this.cmbSaloon = new System.Windows.Forms.ComboBox();
             this.btnDecline = new System.Windows.Forms.Button();
             this.btnAccept = new System.Windows.Forms.Button();
+            this.rdbHigh = new System.Windows.Forms.RadioButton();
+            this.rdbLow = new System.Windows.Forms.RadioButton();
+            this.rdbMedium = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // dateTimePicker1
@@ -115,7 +117,7 @@
             // 
             // txtDetails
             // 
-            this.txtDetails.Location = new System.Drawing.Point(572, 167);
+            this.txtDetails.Location = new System.Drawing.Point(632, 164);
             this.txtDetails.Margin = new System.Windows.Forms.Padding(2);
             this.txtDetails.Name = "txtDetails";
             this.txtDetails.Size = new System.Drawing.Size(361, 20);
@@ -124,7 +126,7 @@
             // lstIssues
             // 
             this.lstIssues.FormattingEnabled = true;
-            this.lstIssues.Location = new System.Drawing.Point(575, 199);
+            this.lstIssues.Location = new System.Drawing.Point(635, 196);
             this.lstIssues.Margin = new System.Windows.Forms.Padding(2);
             this.lstIssues.Name = "lstIssues";
             this.lstIssues.Size = new System.Drawing.Size(359, 264);
@@ -191,7 +193,7 @@
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(707, 141);
+            this.label5.Location = new System.Drawing.Point(767, 138);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 24);
@@ -201,7 +203,7 @@
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point(850, 85);
+            this.label9.Location = new System.Drawing.Point(910, 82);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(80, 24);
@@ -211,7 +213,7 @@
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(756, 85);
+            this.label8.Location = new System.Drawing.Point(816, 82);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(80, 24);
@@ -221,7 +223,7 @@
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(665, 85);
+            this.label7.Location = new System.Drawing.Point(725, 82);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(80, 24);
@@ -243,7 +245,7 @@
             // label12
             // 
             this.label12.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(537, 56);
+            this.label12.Location = new System.Drawing.Point(599, 55);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(8, 509);
@@ -253,7 +255,7 @@
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(572, 85);
+            this.label6.Location = new System.Drawing.Point(632, 82);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(80, 24);
@@ -264,7 +266,7 @@
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(852, 111);
+            this.comboBox3.Location = new System.Drawing.Point(912, 108);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(81, 21);
@@ -272,7 +274,7 @@
             // 
             // lblActivity
             // 
-            this.lblActivity.Location = new System.Drawing.Point(408, 173);
+            this.lblActivity.Location = new System.Drawing.Point(486, 108);
             this.lblActivity.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblActivity.Name = "lblActivity";
             this.lblActivity.Size = new System.Drawing.Size(92, 24);
@@ -283,7 +285,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(758, 111);
+            this.comboBox2.Location = new System.Drawing.Point(818, 108);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(81, 21);
@@ -292,7 +294,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(665, 111);
+            this.comboBox1.Location = new System.Drawing.Point(725, 108);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(81, 21);
@@ -301,7 +303,7 @@
             // cmbIssue
             // 
             this.cmbIssue.FormattingEnabled = true;
-            this.cmbIssue.Location = new System.Drawing.Point(572, 111);
+            this.cmbIssue.Location = new System.Drawing.Point(632, 108);
             this.cmbIssue.Margin = new System.Windows.Forms.Padding(2);
             this.cmbIssue.Name = "cmbIssue";
             this.cmbIssue.Size = new System.Drawing.Size(81, 21);
@@ -327,23 +329,14 @@
             this.lblSaloon.Text = "Select Saloon";
             this.lblSaloon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox4
+            // cmbExtra
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(299, 248);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(92, 21);
-            this.comboBox4.TabIndex = 11;
-            // 
-            // cmbActivity
-            // 
-            this.cmbActivity.FormattingEnabled = true;
-            this.cmbActivity.Location = new System.Drawing.Point(408, 196);
-            this.cmbActivity.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbActivity.Name = "cmbActivity";
-            this.cmbActivity.Size = new System.Drawing.Size(92, 21);
-            this.cmbActivity.TabIndex = 10;
+            this.cmbExtra.FormattingEnabled = true;
+            this.cmbExtra.Location = new System.Drawing.Point(299, 248);
+            this.cmbExtra.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbExtra.Name = "cmbExtra";
+            this.cmbExtra.Size = new System.Drawing.Size(92, 21);
+            this.cmbExtra.TabIndex = 11;
             // 
             // cmbSaloon
             // 
@@ -374,11 +367,47 @@
             this.btnAccept.Text = "Accept";
             this.btnAccept.UseVisualStyleBackColor = true;
             // 
+            // rdbHigh
+            // 
+            this.rdbHigh.AutoSize = true;
+            this.rdbHigh.Location = new System.Drawing.Point(499, 148);
+            this.rdbHigh.Name = "rdbHigh";
+            this.rdbHigh.Size = new System.Drawing.Size(47, 17);
+            this.rdbHigh.TabIndex = 40;
+            this.rdbHigh.TabStop = true;
+            this.rdbHigh.Text = "High";
+            this.rdbHigh.UseVisualStyleBackColor = true;
+            // 
+            // rdbLow
+            // 
+            this.rdbLow.AutoSize = true;
+            this.rdbLow.Location = new System.Drawing.Point(499, 196);
+            this.rdbLow.Name = "rdbLow";
+            this.rdbLow.Size = new System.Drawing.Size(45, 17);
+            this.rdbLow.TabIndex = 40;
+            this.rdbLow.TabStop = true;
+            this.rdbLow.Text = "Low";
+            this.rdbLow.UseVisualStyleBackColor = true;
+            // 
+            // rdbMedium
+            // 
+            this.rdbMedium.AutoSize = true;
+            this.rdbMedium.Location = new System.Drawing.Point(499, 173);
+            this.rdbMedium.Name = "rdbMedium";
+            this.rdbMedium.Size = new System.Drawing.Size(62, 17);
+            this.rdbMedium.TabIndex = 40;
+            this.rdbMedium.TabStop = true;
+            this.rdbMedium.Text = "Medium";
+            this.rdbMedium.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1005, 621);
+            this.Controls.Add(this.rdbMedium);
+            this.Controls.Add(this.rdbLow);
+            this.Controls.Add(this.rdbHigh);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.txtPhoneNumber);
@@ -407,8 +436,7 @@
             this.Controls.Add(this.cmbIssue);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.lblSaloon);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.cmbActivity);
+            this.Controls.Add(this.cmbExtra);
             this.Controls.Add(this.cmbSaloon);
             this.Controls.Add(this.btnDecline);
             this.Controls.Add(this.btnAccept);
@@ -450,10 +478,12 @@
         private System.Windows.Forms.ComboBox cmbIssue;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lblSaloon;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox cmbActivity;
+        private System.Windows.Forms.ComboBox cmbExtra;
         private System.Windows.Forms.ComboBox cmbSaloon;
         private System.Windows.Forms.Button btnDecline;
         private System.Windows.Forms.Button btnAccept;
+        private System.Windows.Forms.RadioButton rdbHigh;
+        private System.Windows.Forms.RadioButton rdbLow;
+        private System.Windows.Forms.RadioButton rdbMedium;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Project.ENTITIES.Models;
+using Project.ENTITIES.Tools;
 using Project.MAP.Options;
 using System;
 using System.Collections.Generic;
@@ -28,6 +29,9 @@ namespace Project.DAL.ContextClasses
             modelBuilder.Configurations.Add(new StandIssueMap());
             modelBuilder.Configurations.Add(new StandMap());
             modelBuilder.Configurations.Add(new EmployeeMap());
+            modelBuilder.Configurations.Add(new ExtraMap());
+            modelBuilder.Configurations.Add(new ExtraOrderMap());
+
         }
 
         public DbSet<Client> Clients  { get; set; }
@@ -39,5 +43,9 @@ namespace Project.DAL.ContextClasses
         public DbSet<Stand> Stands  { get; set; }
         public DbSet<StandIssue> StandIssues  { get; set; }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Extra > Extras { get; set; }
+
+        public DbSet<ExtraOrder> ExtraOrders { get; set; }
+
     }
 }

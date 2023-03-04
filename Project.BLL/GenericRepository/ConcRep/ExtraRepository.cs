@@ -1,5 +1,6 @@
 ﻿using Project.BLL.GenericRepository.BaseRep;
-using Project.ENTITIES.Models;
+using Project.BLL.GenericRepository.IntRep;
+using Project.ENTITIES.Tools;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Project.BLL.GenericRepository.ConcRep
 {
-    public class EmployeeRepository:BaseRepository<Employee>
+    public class ExtraRepository:BaseRepository<Extra>
     {
     }
 }
