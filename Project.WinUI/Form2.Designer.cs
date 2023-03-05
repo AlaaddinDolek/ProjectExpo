@@ -52,7 +52,7 @@
             this.lblActivity = new System.Windows.Forms.Label();
             this.cmbIssueType = new System.Windows.Forms.ComboBox();
             this.cmbStand = new System.Windows.Forms.ComboBox();
-            this.cmbIssue = new System.Windows.Forms.ComboBox();
+            this.cmbIssueSaloon = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.lblSaloon = new System.Windows.Forms.Label();
             this.cmbExtra = new System.Windows.Forms.ComboBox();
@@ -282,14 +282,14 @@
             this.cmbStand.Size = new System.Drawing.Size(107, 24);
             this.cmbStand.TabIndex = 13;
             // 
-            // cmbIssue
+            // cmbIssueSaloon
             // 
-            this.cmbIssue.FormattingEnabled = true;
-            this.cmbIssue.Location = new System.Drawing.Point(843, 133);
-            this.cmbIssue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmbIssue.Name = "cmbIssue";
-            this.cmbIssue.Size = new System.Drawing.Size(107, 24);
-            this.cmbIssue.TabIndex = 12;
+            this.cmbIssueSaloon.FormattingEnabled = true;
+            this.cmbIssueSaloon.Location = new System.Drawing.Point(843, 133);
+            this.cmbIssueSaloon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbIssueSaloon.Name = "cmbIssueSaloon";
+            this.cmbIssueSaloon.Size = new System.Drawing.Size(107, 24);
+            this.cmbIssueSaloon.TabIndex = 12;
             // 
             // label10
             // 
@@ -326,6 +326,7 @@
             this.cmbSaloon.Name = "cmbSaloon";
             this.cmbSaloon.Size = new System.Drawing.Size(227, 24);
             this.cmbSaloon.TabIndex = 9;
+            this.cmbSaloon.SelectedIndexChanged += new System.EventHandler(this.cmbSaloon_SelectedIndexChanged);
             // 
             // btnDecline
             // 
@@ -346,6 +347,7 @@
             this.btnAccept.TabIndex = 7;
             this.btnAccept.Text = "Accept";
             this.btnAccept.UseVisualStyleBackColor = true;
+            this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
             // rdbHigh
             // 
@@ -425,7 +427,7 @@
             this.Controls.Add(this.lblActivity);
             this.Controls.Add(this.cmbIssueType);
             this.Controls.Add(this.cmbStand);
-            this.Controls.Add(this.cmbIssue);
+            this.Controls.Add(this.cmbIssueSaloon);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.lblSaloon);
             this.Controls.Add(this.cmbExtra);
@@ -468,7 +470,7 @@
         private System.Windows.Forms.Label lblActivity;
         private System.Windows.Forms.ComboBox cmbIssueType;
         private System.Windows.Forms.ComboBox cmbStand;
-        private System.Windows.Forms.ComboBox cmbIssue;
+        private System.Windows.Forms.ComboBox cmbIssueSaloon;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lblSaloon;
         private System.Windows.Forms.ComboBox cmbExtra;
