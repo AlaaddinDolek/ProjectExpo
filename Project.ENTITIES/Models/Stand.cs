@@ -29,7 +29,5 @@ namespace Project.ENTITIES.Models
         {
             return $"No:{StandNo} ,{StandArea}";
         }
-
-
     }
 }

@@ -101,19 +101,10 @@ namespace Project.WinUI
                 _saloonRep.Add(item);
             }
 
-            List<Issue> issues = new List<Issue>
-            {
-                new Issue {Description ="Technical"},
-                new Issue {Description = "Management"},
-                new Issue {Description = "Other"}
-            };
 
-            cmbIssueType.DataSource = issues;
 
-            foreach (Issue item in issues)
-            {
-                _issueRep.Add(item);
-            }
+            cmbIssueType.Items.Add(IssueNum.Technic);
+            cmbIssueType.Items.Add(IssueNum.Administrative);
 
         }
         // Stand belirlendikten sonra sipariş aşamasına geçiş
@@ -194,7 +185,7 @@ namespace Project.WinUI
 
             if(cmbIssueType.SelectedIndex > -1)
             {
-               secilenIssueStatus = (cmbIssueType.SelectedItem as Issue).Status;
+               secilenIssueStatus = (cmbIssueType.SelectedItem as IssueNum?).Value;
             }
         }
         private void btnAddIssue_Click(object sender, EventArgs e)
