@@ -110,20 +110,21 @@
             // 
             // txtDetails
             // 
-            this.txtDetails.Location = new System.Drawing.Point(840, 191);
+            this.txtDetails.Location = new System.Drawing.Point(840, 217);
             this.txtDetails.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDetails.Name = "txtDetails";
             this.txtDetails.Size = new System.Drawing.Size(480, 22);
             this.txtDetails.TabIndex = 33;
+            this.txtDetails.TextChanged += new System.EventHandler(this.txtDetails_TextChanged);
             // 
             // lstIssues
             // 
             this.lstIssues.FormattingEnabled = true;
             this.lstIssues.ItemHeight = 16;
-            this.lstIssues.Location = new System.Drawing.Point(847, 278);
+            this.lstIssues.Location = new System.Drawing.Point(846, 337);
             this.lstIssues.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lstIssues.Name = "lstIssues";
-            this.lstIssues.Size = new System.Drawing.Size(477, 324);
+            this.lstIssues.Size = new System.Drawing.Size(477, 276);
             this.lstIssues.TabIndex = 32;
             // 
             // lstAvailableStands
@@ -183,7 +184,7 @@
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(1020, 159);
+            this.label5.Location = new System.Drawing.Point(1020, 181);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(123, 30);
             this.label5.TabIndex = 24;
@@ -192,7 +193,7 @@
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point(1213, 101);
+            this.label9.Location = new System.Drawing.Point(1213, 123);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(107, 30);
             this.label9.TabIndex = 30;
@@ -201,7 +202,7 @@
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(1088, 101);
+            this.label8.Location = new System.Drawing.Point(1088, 123);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(107, 30);
             this.label8.TabIndex = 23;
@@ -210,7 +211,7 @@
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(967, 101);
+            this.label7.Location = new System.Drawing.Point(967, 123);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(107, 30);
             this.label7.TabIndex = 22;
@@ -220,7 +221,7 @@
             // label13
             // 
             this.label13.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.Location = new System.Drawing.Point(351, 69);
+            this.label13.Location = new System.Drawing.Point(355, 45);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(11, 266);
             this.label13.TabIndex = 21;
@@ -239,7 +240,7 @@
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(843, 101);
+            this.label6.Location = new System.Drawing.Point(843, 123);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(107, 30);
             this.label6.TabIndex = 19;
@@ -249,7 +250,7 @@
             // cmbDelay
             // 
             this.cmbDelay.FormattingEnabled = true;
-            this.cmbDelay.Location = new System.Drawing.Point(1216, 133);
+            this.cmbDelay.Location = new System.Drawing.Point(1216, 155);
             this.cmbDelay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbDelay.Name = "cmbDelay";
             this.cmbDelay.Size = new System.Drawing.Size(107, 24);
@@ -267,29 +268,32 @@
             // cmbIssueType
             // 
             this.cmbIssueType.FormattingEnabled = true;
-            this.cmbIssueType.Location = new System.Drawing.Point(1091, 133);
+            this.cmbIssueType.Location = new System.Drawing.Point(1091, 155);
             this.cmbIssueType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbIssueType.Name = "cmbIssueType";
             this.cmbIssueType.Size = new System.Drawing.Size(107, 24);
             this.cmbIssueType.TabIndex = 14;
+            this.cmbIssueType.SelectedIndexChanged += new System.EventHandler(this.cmbIssueType_SelectedIndexChanged);
             // 
             // cmbStand
             // 
             this.cmbStand.FormattingEnabled = true;
-            this.cmbStand.Location = new System.Drawing.Point(967, 133);
+            this.cmbStand.Location = new System.Drawing.Point(967, 155);
             this.cmbStand.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbStand.Name = "cmbStand";
             this.cmbStand.Size = new System.Drawing.Size(107, 24);
             this.cmbStand.TabIndex = 13;
+            this.cmbStand.SelectedIndexChanged += new System.EventHandler(this.cmbStand_SelectedIndexChanged);
             // 
             // cmbIssueSaloon
             // 
             this.cmbIssueSaloon.FormattingEnabled = true;
-            this.cmbIssueSaloon.Location = new System.Drawing.Point(843, 133);
+            this.cmbIssueSaloon.Location = new System.Drawing.Point(843, 155);
             this.cmbIssueSaloon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbIssueSaloon.Name = "cmbIssueSaloon";
             this.cmbIssueSaloon.Size = new System.Drawing.Size(107, 24);
             this.cmbIssueSaloon.TabIndex = 12;
+            this.cmbIssueSaloon.SelectedIndexChanged += new System.EventHandler(this.cmbIssueSaloon_SelectedIndexChanged);
             // 
             // label10
             // 
@@ -387,13 +391,14 @@
             // 
             // btnAddIssue
             // 
-            this.btnAddIssue.Location = new System.Drawing.Point(1216, 230);
+            this.btnAddIssue.Location = new System.Drawing.Point(1216, 264);
             this.btnAddIssue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddIssue.Name = "btnAddIssue";
             this.btnAddIssue.Size = new System.Drawing.Size(104, 31);
             this.btnAddIssue.TabIndex = 8;
             this.btnAddIssue.Text = "Add Issue";
             this.btnAddIssue.UseVisualStyleBackColor = true;
+            this.btnAddIssue.Click += new System.EventHandler(this.btnAddIssue_Click);
             // 
             // Form2
             // 

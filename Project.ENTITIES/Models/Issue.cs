@@ -19,7 +19,7 @@ namespace Project.ENTITIES.Models
 
 		public override string ToString()
 		{
-            return Description;
+            return $"{Description} ve Sebebi {Status}";
 		}
 
 		//Relational Properties
